@@ -11,6 +11,7 @@
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
 // ==/UserScript==
 
+// Edit the 'ACCNUMBER' to your Bank Account Number;
 const account = 'ACCNUMBER';
 var totalServers = $(".widget-content.padding > ul > a").length;
 var index = 0;
@@ -113,7 +114,7 @@ function postData(itemToBuy, itemCost, itemId){
     });
 }
 
-//moneyToNumber("$123,456");
+// Update how much money you have left;
 function moneyToNumber(x) {
     currency = $("div.finance-info > div > span").html();
     money = parseInt(currency.replace(/[^0-9\.-]+/g,""));
